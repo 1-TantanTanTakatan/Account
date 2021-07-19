@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size">24sp</dimen>
+    <dimen name="text_button">32sp</dimen>
+    <dimen name="margin">8dp</dimen>
+    <dimen name="item_height">50dp</dimen>
+    <dimen name="itme_width">300dp</dimen>
+    <dimen name="iconitem_width_percent">0.7</dimen>
+    <dimen name="piechart_height_percent">0.5</dimen>
+    <dimen name="item_width_percent">0.45</dimen>
+</resources>

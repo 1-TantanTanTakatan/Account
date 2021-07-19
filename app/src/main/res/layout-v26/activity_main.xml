@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/asset"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:autoSizeTextType="uniform"
+        android:text="@string/asset_info"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:autoSizeTextType="uniform"
+        android:text="@string/income_expense"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/asset" />
+
+    <ImageView
+        android:id="@+id/bank_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bank"
+        app:layout_constraintEnd_toStartOf="@+id/deposit_withdraw"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pl" />
+
+    <TextView
+        android:id="@+id/deposit_withdraw"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        android:text="@string/deposit_withdraw"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pl"
+        app:layout_constraintWidth_percent="@dimen/iconitem_width_percent" />
+
+    <ImageView
+        android:id="@+id/icCard_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/iccard"
+        app:layout_constraintEnd_toStartOf="@+id/chargeIC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bank_icon" />
+
+    <TextView
+        android:id="@+id/chargeIC"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        android:text="@string/chargeIC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/deposit_withdraw"
+        app:layout_constraintWidth_percent="@dimen/iconitem_width_percent" />
+
+    <ImageView
+        android:id="@+id/qr_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/qr"
+        app:layout_constraintEnd_toStartOf="@+id/chargeQR"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/icCard_icon" />
+
+    <TextView
+        android:id="@+id/chargeQR"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        android:text="@string/chargeQR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chargeIC"
+        app:layout_constraintWidth_percent="@dimen/iconitem_width_percent" />
+
+    <ImageView
+        android:id="@+id/creditCard_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/creditcard"
+        app:layout_constraintEnd_toStartOf="@+id/payCreditCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/qr_icon" />
+
+    <TextView
+        android:id="@+id/payCreditCard"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        android:text="@string/payCreditCard"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chargeQR"
+        app:layout_constraintWidth_percent="@dimen/iconitem_width_percent" />
+
+    <ImageView
+        android:id="@+id/income_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/income"
+        app:layout_constraintEnd_toStartOf="@+id/registerIncome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/creditCard_icon" />
+
+    <TextView
+        android:id="@+id/registerIncome"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        android:text="@string/registerIncome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payCreditCard"
+        app:layout_constraintWidth_percent="@dimen/iconitem_width_percent" />
+
+    <ImageView
+        android:id="@+id/expense_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:adjustViewBounds="true"
+        android:src="@drawable/expense"
+        app:layout_constraintEnd_toStartOf="@+id/registerExpense"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/income_icon" />
+
+    <TextView
+        android:id="@+id/registerExpense"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        android:text="@string/registerExpense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerIncome"
+        app:layout_constraintWidth_percent="@dimen/iconitem_width_percent" />
+
+    <TextView
+        android:id="@+id/lend_borrow"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        android:text="@string/lend_borrow"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerExpense" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

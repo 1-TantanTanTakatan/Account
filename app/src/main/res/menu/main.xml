@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_main_bankaccount"
+        android:orderInCategory="101"
+        android:title="@string/menu_main_bankaccount" />
+
+    <item
+        android:id="@+id/menu_main_iccard"
+        android:orderInCategory="102"
+        android:title="@string/menu_main_iccard" />
+
+    <item
+        android:id="@+id/menu_main_qrpay"
+        android:orderInCategory="103"
+        android:title="@string/menu_main_qrpay" />
+
+    <item
+        android:id="@+id/menu_main_creditcard"
+        android:orderInCategory="103"
+        android:title="@string/menu_main_creditcard" />
+
+    <item
+        android:id="@+id/menu_main_cost"
+        android:orderInCategory="105"
+        android:title="@string/menu_main_cost" />
+</menu>

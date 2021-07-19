@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TradeActivity">
+
+    <TextView
+        android:id="@+id/trade_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/input_date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/input_date"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:focusable="false"
+        android:hint="@string/select_date"
+        android:inputType="date"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/trade_title" />
+
+    <TextView
+        android:id="@+id/credit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toTopOf="@+id/debit"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_credit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/input_date"
+        app:layout_constraintWidth_percent="@dimen/item_width_percent" />
+
+    <Spinner
+        android:id="@+id/spinner_credit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        app:layout_constraintBottom_toTopOf="@id/spinner_debit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/credit"
+        app:layout_constraintTop_toBottomOf="@+id/input_date"
+        app:layout_constraintWidth_percent="@dimen/item_width_percent" />
+
+    <TextView
+        android:id="@+id/debit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:autoSizeTextType="uniform"
+        android:text="@string/trade_methodpayment"
+        app:layout_constraintBottom_toTopOf="@+id/input_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner_debit"
+        app:layout_constraintTop_toBottomOf="@+id/credit"
+        app:layout_constraintWidth_percent="@dimen/item_width_percent" />
+
+    <Spinner
+        android:id="@+id/spinner_debit"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/margin"
+        app:layout_constraintBottom_toTopOf="@+id/input_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/debit"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_credit"
+        app:layout_constraintWidth_percent="@dimen/item_width_percent" />
+
+    <EditText
+        android:id="@+id/input_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:hint="@string/edit_description"
+        android:inputType="text"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toTopOf="@+id/input_price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/input_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:hint="@string/price"
+        android:inputType="number"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toTopOf="@+id/trade_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/trade_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin"
+        android:text="@string/button_add"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

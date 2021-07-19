@@ -1,0 +1,80 @@
+<resources>
+    <string name="app_name">Account</string>
+
+    <string name="asset_info">Asset Information</string>
+    <string name="income_expense">Income &amp; Expense</string>
+
+    <string name="asset">Asset</string>
+    <string name="category">Category</string>
+    <string name="list">List</string>
+    <string name="price">Price</string>
+    <string name="trade">Trade</string>
+
+    <string name="menu_main_bankaccount" translatable="true">Edit BankAccount</string>
+    <string name="menu_main_cost">Edit CostCategory</string>
+    <string name="menu_main_creditcard">Edit CreditCard</string>
+    <string name="menu_main_iccard">Edit ICCard</string>
+    <string name="menu_main_qrpay">Edit QRPay</string>
+
+    <string name="menu_lb_borrow">Borrow new counterpart</string>
+    <string name="menu_lb_lend">Lend new counterpart</string>
+
+    <string name="deposit_withdraw">Deposit &amp; Withdraw</string>
+    <string name="chargeIC">Charge ICCard</string>
+    <string name="chargeQR">Charge QRPay</string>
+    <string name="payCreditCard">Pay CreditCard</string>
+    <string name="registerIncome">Register Income</string>
+    <string name="registerExpense">Register Expense</string>
+    <string name="lend_borrow">Lend &amp; Borrow</string>
+
+    <string name="button_add">ADD</string>
+    <string name="button_send" translatable="false">SEND</string>
+    <string name="edit_rename">Rename</string>
+    <string name="select_date">Select Date</string>
+    <string name="select_method">Select Method</string>
+    <string name="input_price">Input Price</string>
+    <string name="edit_description">Description</string>
+
+    <string name="pl_trade_list">Trade List</string>
+
+    <string name="trade_deposit">Deposit</string>
+    <string name="trade_withdraw">Withdraw</string>
+    <string name="lend">Lend</string>
+    <string name="borrow">Borrow</string>
+    <string name="pay_back">PayBack</string>
+    <string name="trade_howreceive">How to Receive</string>
+    <string name="trade_methodpayment">Method of Payment</string>
+    <string name="trade_methodlend">Method of Lending</string>
+    <string name="trade_methodborrow">Method of Borrowing</string>
+
+    <string name="trade_bankaccount">BankAccount</string>
+    <string name="trade_iccard">ICCard</string>
+    <string name="trade_qrpay">QRPay</string>
+    <string name="trade_creditcard">CreditCard</string>
+
+    <string name="send_debt">Send Debt</string>
+    <string name="receive_debt">Receive Debt</string>
+    <string name="register_only">Register in only mine</string>
+
+    <string name="finish_register">Completed registration</string>
+    <string name="error_duplicate">Can\'t register the same category name</string>
+
+    <string name="about_dialog_title" translatable="false">About Chat</string>
+    <string name="about_dialog_content" translatable="false">Simple Bluetooth chat application</string>
+    <string name="alert_connection_confirmation" translatable="false">Do you really want to connect to this device?</string>
+
+    <string name="format_dev_name" translatable="false">%1$s %2$s</string>
+
+    <string name="menu_scan_scan" translatable="false">Scan</string>
+    <string name="menu_scan_stop" translatable="false">Stop</string>
+
+    <string name="scan_status_stopped" translatable="false">Select a device you want to connect to</string>
+    <string name="scan_status_scanning" translatable="false">Scanning in progress</string>
+
+    <string name="toast_bluetooth_not_supported" translatable="false">This device does not support Bluetooth</string>
+    <string name="toast_bluetooth_disabled" translatable="false">Bluetooth should be enabled</string>
+    <string name="toast_scanning_requires_permission" translatable="false">Scanning requires permission %s</string>
+    <string name="toast_connection_failed" translatable="false">Connection failed</string>
+    <string name="toast_connection_closed" translatable="false">Connection closed</string>
+    <string name="toast_empty_message" translatable="false">Empty message</string>
+</resources>
